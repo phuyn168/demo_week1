@@ -4,6 +4,7 @@ install:
 
 test:
 	python -m pytest -vv test_hello.py
+	python -m pytest --nbval hello_notebook.ipynb
 
 format:
 	black *.py
